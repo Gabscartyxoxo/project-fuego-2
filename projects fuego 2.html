@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Avg paid paternity leave in Retail</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        
+    </head>
+    <body>
+        <canvas id="myChart"></canvas>
+    </body>
+    <script>
+        new Chart(document.getElementById("myChart"), {
+            type: 'horizontalBar',
+            data: {
+            labels: ["Department Store", "Furniture/home Improvement", "Shoes, Accessories, Apparel ", "Macy's", "Myer"],
+            datasets: [
+                {
+                label: "Time (weeks)",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [4,5,4.5,0,12.6]
+                }
+            ]
+            },
+            options: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: 'Avg amt of weeks paid paternity leave in Retail'
+            }
+            }
+        });
+    </script>
+</html>
